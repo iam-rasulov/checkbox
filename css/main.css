@@ -1,11 +1,4 @@
-.checkbox{
-  width: 600px;
-  background-color: whitesmoke;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.visually__hidden {
+.visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -13,78 +6,109 @@
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 .title{
+  width: 500px;
+  margin: 20px auto 20px auto;
   text-align: center;
-  margin-top: 50px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
-.form{
+form{
   display: flex;
   flex-direction: column;
   width: 200px;
+  /* background-color: gray;
+  border: 1px solid black; */
   margin: 0 auto;
+  padding: 5px;
 }
 
-.label{
-  margin-top: 20px;
-  margin-left: auto;
-  font-size: 26px;
-  line-height: 18px;
+label{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  margin-bottom: 1px;
+  font-size: 30px;
 }
 
-.span{
+/* input{
+  margin-right: auto;
+} */
+
+.stol__tennisi{ 
   display: inline-block;
-  vertical-align: middle;
   width: 30px;
   height: 30px;
   border: 1px solid black;
   border-radius: 5px;
-  
+  margin-right: 10px;
+}
+.basketbol{ 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.voleybol{ 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.xokkey{ 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 input:checked ~ .stol__tennisi{
   background-image: url(../images/table-tennis.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
-
 input:checked ~ .basketbol{
   background-image: url(../images/basketball-ball.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
-
 
 input:checked ~ .voleybol{
   background-image: url(../images/volleyball-ball.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 80%;
-}
-
-input:disabled  ~ .input__controller{
-  opacity: 0.2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
 
 input:checked ~ .xokkey{
   background-image: url(../images/hockey-puck.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 80%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
 
-
-.button{
-  width: 90px;
-  padding: 5px;
+ .button{
+  width: 100px;
+  margin: 20px auto 0 auto;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color:gray;
-  font-size: 24px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
+} 
